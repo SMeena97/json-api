@@ -1,0 +1,27 @@
+<app-header></app-header>
+<br/>
+<br/>
+<div class="container">
+    <div class="row">
+       <table class="table">
+          <thead>
+           <tr>
+             <th class="text-center">Post Id</th>
+             <th class="text-center">ID</th>
+             <th class="text-center">Name</th>
+             <th class="text-center">Email</th>
+             <th class="text-center">Body</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr *ngFor="let post of _postsArray">
+               <td class="text-center" style="width: 5px">{{post.postId}}</td>
+               <td class="text-center" style="width: 10px">{{post.id}}</td>
+               <td class="text-center" style="width: 10px">{{post.name}}</td>
+               <td class="text-center" style="width: 15px">{{post.email}}</td>
+               <td class="text-center">{{post.body}}</td>
+           </tr>
+         </tbody>
+       </table>
+    </div>
+  </div>
